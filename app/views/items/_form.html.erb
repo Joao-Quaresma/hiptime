@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <%= simple_form_for @item do |f| %>
+      <%= f.input :title, label: 'Item Title:' %>
+      <%= f.input :description, label: 'Description:' %>
+      <%= f.button :submit, class: "btn btn-info" %>
+    <% end %>
+  </body>
+</html>
